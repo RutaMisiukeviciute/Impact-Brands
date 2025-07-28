@@ -1,215 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <i class="fa-solid fa-bars"></i>
-            <ul>
-                <li><a href="#">shop</a></li>
-                <li><a href="#">mission</a></li>
+    <header class="site-header">
+        <nav class="site-header__nav">
+            <i class="site-header__menu-icon fa-solid fa-bars"></i>
+            <ul class="site-header__nav-list">
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">shop</a></li>
+                <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">mission</a></li>
             </ul>
         </nav>
-        <div>LOGO</div>
+        <div class="site-header__logo">LOGO</div>
     </header>
     <main>
-        <section>
-            <h1>New Year, New “You” with [product name]</h1>
-            <button>try [product name]</button>
-        </section>
-        <section>
-            <div>
-                <i class="fa-solid fa-moon"></i>
-                <p>Improves sleep</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-shield-heart"></i>
-                <p>Boosts immune system</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-hand-fist"></i>
-                <p>Enhances strength</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Improves digestion</p>
-            </div>
-        </section>
-        <section>
-            <h2>subscribe & save</h2>
-            <div>
-                <i class="fa-solid fa-arrows-spin"></i>
-                <p>delivery every 30 days</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-percent"></i>
-                <p>best value per box</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-xmark"></i>
-                <p>no commitment, cancel anytime</p>
-            </div>
-        </section>
-        <section>
-            <h2>Performance nutrition and healthy transformation made simple:</h2>
-            <div>
-                <i class="fa-solid fa-fire"></i>
-                <p>Recharged <b>metabolism</b> to stay in peak shape/p>
-            </div>
-            <div>
-                <i class="fa-solid fa-bolt"></i>
-                <p>Enjoy jitter-free <b>energy</b> to tackle your busy schedule</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-person-running"></i>
-                <p>Enhance <b>endurance, performance,</b> and exercise <b>recovery</b></p>
-            </div>
-            <div>
-                <i class="fa-solid fa-shield-virus"></i>
-                <p>Strengthen your <b>immune health</b> to stay on your game</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-check-double"></i>
-                <p><b>30 sec habit.</b> Mixes in any beverage fast and easy</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-thumbs-up"></i>
-                <p><b>Tastes amazing!</b> No bitterness, gritty, or clumpy texture</p>
-            </div>
-        </section>
-        <section>
-            <img src="" alt="">
-            <p>only exceptional USDA certified organic sustainable sourced ingredients qualify.</p>
-        </section>
-        <section>
-            <div>
-                <h1>[product name] lend</h1>
-                <h2>Metabolism Boosting</h2>
-                <Main>These powerful superfoods ignite your metabolism and reduce bloating. They improve digestion and deliver the energy you need to get things done. 
-                    <br>
-                    <br>
-                    Main Organic Ingiridents:</p>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <p>organic acai berry</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>organic acacia gum</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>organic ceylon cinnamon bark</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>organic green tea</p>
+        <section class="banner">
+            <div class="banner__background">
+                <div class="banner__content">
+                    <h1 class="banner__title">
+                        new year, new “you” <br> with
+                        <span class="banner__brand-name title"></span>
+                    </h1>
+                    <button class="btn btn_red">
+                        try <span class="btn__brand-name title"></span>
+                    </button>
                 </div>
             </div>
-            </div>
-            <div></div>
-            <button>add to cart</button>
         </section>
-        <section>
-            <h1></h1>
-            <div>
-                <i class="fa-solid fa-hand-fist"></i>
-                <p><b>Mision</b><br> Our team of researchers are working around the clock to uncover the best performance and health-boosting superfoods on the planet. We do the homework so you don’t have to. Each superfood is supported by strong clinical studies.</p>
-                <img src="" alt="">
+        <section class="benefits">
+            <div class="benefits__item">
+                <i class="benefits__icon fa-solid fa-moon"></i>
+                <h4 class="benefits__title">Improves <br> sleep</h4>
             </div>
-            <div>
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <p><b>The problem</b><br> our advisory panel reviews all of the scientific research in detail. Each ingredient must pass the rigorous approval process. Once approved, only then do our formulas move on to production.</p>
-                <img src="" alt="">
+            <div class="benefits__item">
+                <i class="benefits__icon fa-solid fa-shield-heart"></i>
+                <h4 class="benefits__title">Boosts immune <br> system</h4>
             </div>
-            <div>
-                <i class="fa-solid fa-shield-heart"></i>
-                <p><b>That isn’t therapeutic</b><br> Production takes place in our GMP-compliant, state of the art manufacturing facility. Once again, only using 100% organic ingredients that have been verified by the USDA.</p>
-                <img src="" alt="">
+            <div class="benefits__item">
+                <i class="benefits__icon fa-solid fa-hand-fist"></i>
+                <h4 class="benefits__title">Enhances <br> strength</h4>
             </div>
-            <div>
-                <i class="fa-solid fa-person-running"></i>
-                <p><b>The result</b><br> Getting our formulas into the hands of people who need it most and transforming lives for the better. We believe in improving humankind by improving human performance. And that starts with nourishing your body with the right fuel.</p>
+            <div class="benefits__item">
+                <svg class="benefits__icon" width="52" height="48" viewBox="0 0 52 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.34 47.1526V43.5422C19.34 40.2386 22.018 37.5605 25.3217 37.5605H31.8189C32.1688 37.5605 32.4546 37.2757 32.4557 36.9258L32.4562 36.7384C32.4567 36.5647 32.3935 36.3941 32.271 36.2708C32.1506 36.1499 31.9902 36.0832 31.8197 36.0832H13.1506C9.84689 36.0832 7.16882 33.4051 7.16882 30.1015V29.8981C7.16882 26.5944 9.84689 23.9163 13.1506 23.9163H37.941C38.2928 23.9163 38.5778 23.6313 38.5778 23.2795V23.173C38.5778 22.8212 38.2928 22.5362 37.941 22.5362H15.9621C14.3748 22.5362 12.8797 21.921 11.752 20.804C10.6244 19.687 9.99529 18.1977 9.98034 16.6105L9.97981 16.5435C9.96486 14.9354 10.5798 13.4205 11.712 12.2779C12.8439 11.1353 14.3532 10.506 15.9616 10.506H32.2035C32.5534 10.506 32.8392 10.2212 32.8403 9.87128V9.81843C32.8408 9.65829 32.7874 9.50082 32.6812 9.38098C32.5584 9.24246 32.3871 9.16559 32.2037 9.16559H27.7892C24.4855 9.16559 21.8075 6.48752 21.8075 3.18384V0.846605C21.8075 0.378997 22.1865 0 22.6541 0H26.306C26.7737 0 27.1527 0.378997 27.1527 0.846605V3.18358C27.1527 3.53535 27.4377 3.8204 27.7895 3.8204H32.204C33.8051 3.8204 35.3096 4.44494 36.4402 5.57873C37.5708 6.71252 38.1908 8.2189 38.186 9.82003V9.83498C38.1812 11.4294 37.5631 12.9689 36.436 14.0968C35.3059 15.2279 33.8025 15.8509 32.204 15.8509H15.9784C15.8038 15.8509 15.6327 15.9149 15.5097 16.0391C15.3891 16.1608 15.3231 16.3222 15.3247 16.4936L15.3253 16.5606C15.3285 16.9075 15.6149 17.1913 15.9618 17.1913H37.9549C41.2508 17.1913 43.9227 19.8632 43.9227 23.1591V23.2798C43.9227 26.5835 41.2447 29.2615 37.941 29.2615H13.1506C12.7988 29.2615 12.5138 29.5466 12.5138 29.8983V30.1017C12.5138 30.4535 12.7988 30.7385 13.1506 30.7385H31.7673C33.3714 30.7385 34.9208 31.3594 36.0537 32.4947C37.1857 33.6288 37.8065 35.1362 37.8017 36.7384L37.8011 36.9424C37.7963 38.5405 37.1689 40.0419 36.0348 41.1684C34.9034 42.2924 33.3621 42.9062 31.7671 42.9062H25.3223C24.9705 42.9062 24.6854 43.1913 24.6854 43.543V47.1534C24.6854 47.621 24.3064 48 23.8388 48H20.1868C19.7192 48 19.3402 47.621 19.3402 47.1534L19.34 47.1526Z" />
+                    <path
+                        d="M45.0667 18.8085L45.055 18.7909C44.7366 18.3065 44.8708 17.6558 45.3553 17.3374L47.5382 15.9017C48.0227 15.5833 48.6734 15.7176 48.9918 16.202L49.0035 16.2196C49.3219 16.704 49.1877 17.3547 48.7032 17.6731L46.5203 19.1088C46.0359 19.4272 45.3852 19.293 45.0667 18.8085Z" />
+                    <path
+                        d="M48.992 30.6948L49.0038 30.6772C49.3222 30.1927 49.1879 29.542 48.7035 29.2236L46.5205 27.788C46.0361 27.4696 45.3854 27.6038 45.067 28.0882L45.0552 28.1058C44.7368 28.5903 44.8711 29.241 45.3555 29.5594L47.5385 30.995C48.0229 31.3134 48.6736 31.1792 48.992 30.6948Z" />
+                    <path
+                        d="M50.2056 22.4395H47.5931C47.0134 22.4395 46.5434 22.9094 46.5434 23.4892V23.51C46.5434 24.0897 47.0134 24.5597 47.5931 24.5597H50.2056C50.7853 24.5597 51.2553 24.0897 51.2553 23.51V23.4892C51.2553 22.9094 50.7853 22.4395 50.2056 22.4395Z" />
+                    <path
+                        d="M2.25213 22.9293L2.26372 22.9117C2.58195 22.4278 3.23327 22.2933 3.71718 22.6115L5.90013 24.0471C6.38404 24.3653 6.51879 25.0168 6.20041 25.5009L6.18882 25.5185C5.87059 26.0024 5.21927 26.137 4.73536 25.8187L2.55241 24.3832C2.0685 24.0649 1.93375 23.4135 2.25213 22.9293Z" />
+                    <path
+                        d="M2.55266 35.933L4.7356 34.4974C5.21951 34.1792 5.87106 34.3136 6.18944 34.7977L6.20102 34.8153C6.51925 35.2992 6.38487 35.9508 5.90074 36.2692L3.7178 37.7047C3.23389 38.023 2.58234 37.8886 2.26396 37.4044L2.25237 37.3868C1.93414 36.9029 2.06852 36.2514 2.55266 35.933Z" />
+                    <path
+                        d="M3.66213 29.1504H1.04972C0.469974 29.1504 0 29.6204 0 30.2001V30.2209C0 30.8007 0.469974 31.2706 1.04972 31.2706H3.66213C4.24187 31.2706 4.71184 30.8007 4.71184 30.2209V30.2001C4.71184 29.6204 4.24187 29.1504 3.66213 29.1504Z" />
+                </svg>
+                <h4 class="benefits__title">Improves <br> digestion</h4>
             </div>
         </section>
+
+        <section class="subscription">
+            <h2 class="subscription__heading">subscribe & save</h2>
+            <div class="subscription__benefits">
+                <div class="subscription__benefit">
+                    <i class="subscription__icon fa-solid fa-arrows-spin"></i>
+                    <h4 class="subscription__text">delivery every 30 days</h4>
+                </div>
+                <div class="subscription__benefit">
+                    <i class="subscription__icon fa-solid fa-percent"></i>
+                    <h4 class="subscription__text">best value per box</h4>
+                </div>
+                <div class="subscription__benefit">
+                    <i class="subscription__icon fa-solid fa-xmark"></i>
+                    <h4 class="subscription__text">no commitment, cancel anytime</h4>
+                </div>
+            </div>
+        </section>
+        <section class="benefits-list">
+            <h2 class="benefits-list__heading">
+                Performance nutrition and healthy transformation made simple:
+            </h2>
+            <div class="benefits-list__items">
+                <div class="benefits-list__item benefits-list__item--fire">
+                    <i class="benefits-list__icon fa-solid fa-fire"></i>
+                    <h4 class="benefits-list__text">
+                        Recharged <span class="benefits-list__highlight">metabolism</span> to stay in peak shape
+                    </h4>
+                </div>
+                <div class="benefits-list__item benefits-list__item--bolt">
+                    <i class="benefits-list__icon fa-solid fa-bolt"></i>
+                    <h4 class="benefits-list__text">
+                        Enjoy jitter-free <span class="benefits-list__highlight">energy</span> to tackle your busy
+                        schedule
+                    </h4>
+                </div>
+                <div class="benefits-list__item benefits-list__item--running">
+                    <i class="benefits-list__icon fa-solid fa-person-running"></i>
+                    <h4 class="benefits-list__text">
+                        Enhance <span class="benefits-list__highlight">endurance, performance,</span> and exercise <span
+                            class="benefits-list__highlight">recovery</span>
+                    </h4>
+                </div>
+                <div class="benefits-list__item benefits-list__item--immune">
+                    <i class="benefits-list__icon fa-solid fa-shield-virus"></i>
+                    <h4 class="benefits-list__text">
+                        Strengthen your <span class="benefits-list__highlight">immune health</span> to stay on your game
+                    </h4>
+                </div>
+                <div class="benefits-list__item benefits-list__item--check">
+                    <i class="benefits-list__icon fa-solid fa-check-double"></i>
+                    <h4 class="benefits-list__text">
+                        <span class="benefits-list__highlight">30 sec habit.</span> Mixes in any beverage fast and easy
+                    </h4>
+                </div>
+                <div class="benefits-list__item  benefits-list__item">
+                    <i class="benefits-list__icon fa-solid fa-thumbs-up"></i>
+                    <h4 class="benefits-list__text">
+                        <span class="benefits-list__highlight">Tastes amazing!</span> No bitterness, gritty, or clumpy
+                        texture
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="ingredients-certification">
+            <img class="ingredients-certification__logo" src="./media/usda-organic-logo.png"
+                alt="ingredients-certification">
+            <h4 class="ingredients-certification__text">
+                only exceptional USDA certified organic sustainable sourced ingredients qualify.
+            </h4>
+        </section>
+
+        <section class="product-carousel" id="product-carousel">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <h1 class="product-carousel__title">
+                                <span class="product-carousel__brand-name title"></span> blend
+                            </h1>
+                            <div class="product-carousel__content">
+                                <div class="product-carousel__info">
+                                    <h2 class="product-carousel__subtitle">Metabolism Boosting</h2>
+                                    <h4 class="product-carousel__description">
+                                        These powerful superfoods ignite your metabolism and reduce bloating. They
+                                        improve digestion and deliver the energy you need to get things done.
+                                    </h4>
+                                    <h4 class="product-carousel__ingredients-heading">Main Organic Ingredients:</h4>
+                                </div>
+                                <div class="product-carousel__grid">
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acai berry.png"
+                                            alt="organic acai berry">
+                                        <h4 class="product-carousel__ingredient-name">organic acai berry</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acacia gum.png"
+                                            alt="organic acacia gum">
+                                        <h4 class="product-carousel__ingredient-name">organic acacia gum</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/cinnamon bark.png"
+                                            alt="organic ceylon cinnamon bark">
+                                        <h4 class="product-carousel__ingredient-name">organic ceylon cinnamon bark</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/green tea.png"
+                                            alt="organic green tea">
+                                        <h4 class="product-carousel__ingredient-name">organic green tea</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Slide 2 -->
+                        <li class="glide__slide">
+                            <h1 class="product-carousel__title">
+                                <span class="product-carousel__brand-name title"></span> blend
+                            </h1>
+                            <div class="product-carousel__content">
+                                <div class="product-carousel__info">
+                                    <h2 class="product-carousel__subtitle">Metabolism Boosting</h2>
+                                    <h4 class="product-carousel__description">
+                                        These powerful superfoods ignite your metabolism and reduce bloating. They
+                                        improve digestion and deliver the energy you need to get things done.
+                                    </h4>
+                                    <h4 class="product-carousel__ingredients-heading">Main Organic Ingredients:</h4>
+                                </div>
+                                <div class="product-carousel__grid">
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acai berry.png"
+                                            alt="organic acai berry">
+                                        <h4 class="product-carousel__ingredient-name">organic acai berry</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acacia gum.png"
+                                            alt="organic acacia gum">
+                                        <h4 class="product-carousel__ingredient-name">organic acacia gum</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/cinnamon bark.png"
+                                            alt="organic ceylon cinnamon bark">
+                                        <h4 class="product-carousel__ingredient-name">organic ceylon cinnamon bark</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/green tea.png"
+                                            alt="organic green tea">
+                                        <h4 class="product-carousel__ingredient-name">organic green tea</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Slide 3 -->
+                        <li class="glide__slide">
+                            <h1 class="product-carousel__title">
+                                <span class="product-carousel__brand-name title"></span> blend
+                            </h1>
+                            <div class="product-carousel__content">
+                                <div class="product-carousel__info">
+                                    <h2 class="product-carousel__subtitle">Metabolism Boosting</h2>
+                                    <h4 class="product-carousel__description">
+                                        These powerful superfoods ignite your metabolism and reduce bloating. They
+                                        improve digestion and deliver the energy you need to get things done.
+                                    </h4>
+                                    <h4 class="product-carousel__ingredients-heading">Main Organic Ingredients:</h4>
+                                </div>
+                                <div class="product-carousel__grid">
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acai berry.png"
+                                            alt="organic acai berry">
+                                        <h4 class="product-carousel__ingredient-name">organic acai berry</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/acacia gum.png"
+                                            alt="organic acacia gum">
+                                        <h4 class="product-carousel__ingredient-name">organic acacia gum</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/cinnamon bark.png"
+                                            alt="organic ceylon cinnamon bark">
+                                        <h4 class="product-carousel__ingredient-name">organic ceylon cinnamon bark</h4>
+                                    </div>
+                                    <div class="product-carousel__ingredient">
+                                        <img class="product-carousel__image" src="./media/green tea.png"
+                                            alt="organic green tea">
+                                        <h4 class="product-carousel__ingredient-name">organic green tea</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glide_everything">
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="product-carousel__button btn btn_black">add to cart</button>
+        </section>
+
+        </section>
+        <section class="process">
+            <h1 class="process__heading">Meticulous Methodical Process</h1>
+            <div class="process__steps">
+
+                <div class="process__step process__step--mission">
+                    <i class="process__icon fa-solid fa-hand-fist first_hand"></i>
+                    <h4 class="process__text">
+                        <span class="process__label">Mision</span><br>
+                        Our team of researchers are working around the clock to uncover the best performance and
+                        health-boosting superfoods on the planet. We do the homework so you don’t have to. Each
+                        superfood is supported by strong clinical studies.
+                    </h4>
+                    <div class="process__decoration">
+                        <div class="process__bubble"></div>
+                        <div class="process__line"></div>
+                    </div>
+                    <img class="process__image" src="./media/Group 361.png" alt="Mision">
+                </div>
+
+                <div class="process__step process__step--production">
+                    <i class="process__icon fa-solid fa-heart first_heart"></i>
+                    <h4 class="process__text">
+                        <span class="process__label">That isn’t therapeutic</span><br>
+                        Production takes place in our GMP-compliant, state of the art manufacturing facility. Once
+                        again, only using 100% organic ingredients that have been verified by the USDA.
+                    </h4>
+                    <div class="process__decoration">
+                        <div class="process__bubble"></div>
+                        <div class="process__line"></div>
+                    </div>
+                    <img class="process__image" src="./media/Group 361.png" alt="Production">
+                </div>
+
+                <div class="process__timeline" id="timeline">
+                    <div class="process__timeline-start"></div>
+                    <div class="process__timeline-line"></div>
+                    <div class="process__timeline-point">
+                        <i class="process__timeline-point__icon fa-solid fa-hand-fist"></i>
+                        <div id="half"></div>
+                    </div>
+                    <div class="process__timeline-line2"></div>
+                    <div class="process__timeline-point">
+                        <div id="half2"></div>
+                        <i class="process__timeline-point__icon fa-solid fa-circle-exclamation"></i>
+                    </div>
+                    <div class="process__timeline-line3"></div>
+                    <div class="process__timeline-point">
+                        <i class="process__timeline-point__icon fa-solid fa-heart"></i>
+                        <div id="half3"></div>
+                    </div>
+                    <div class="process__timeline-line4"></div>
+                    <div class="process__timeline-point">
+                        <i class="process__timeline-point__icon fa-solid fa-person-running"></i>
+                        <div id="half4"></div>
+                    </div>
+                    <div class="process__timeline-end"></div>
+                </div>
+
+                <div class="process__step process__step--advisory">
+                    <i class="process__icon fa-solid fa-circle-exclamation first_circle"></i>
+                    <h4 class="process__text">
+                        <span class="process__label">The problem</span><br>
+                        Our advisory panel reviews all of the scientific research in detail. Each ingredient must pass
+                        the rigorous approval process. Once approved, only then do our formulas move on to production.
+                    </h4>
+                    <div class="process__decoration">
+                        <div class="process__bubble"></div>
+                        <div class="process__line"></div>
+                    </div>
+                    <img class="process__image" src="./media/Group 361.png" alt="Advisory">
+                </div>
+
+                <div class="process__step process__step--result">
+                    <i class="process__icon fa-solid fa-person-running first_person"></i>
+                    <h4 class="process__text">
+                        <span class="process__label">The result</span><br>
+                        Getting our formulas into the hands of people who need it most and transforming lives for the
+                        better. We believe in improving humankind by improving human performance. And that starts with
+                        nourishing your body with the right fuel.
+                    </h4>
+                    <div class="process__decoration">
+                        <div class="process__bubble"></div>
+                        <div class="process__line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <h2>FAQs</h2>
-        <div>
-            <div>
-                <p>What are the Effective ingredients in [product name]?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
+    <footer class="faq">
+        <h2 class="faq__title">FAQs</h2>
+
+        <div class="faq__item">
+            <div class="faq__question">
+                <h4 class="faq__question-text">What are the Effective ingredients in <span
+                        class="faq__product-name title"></span>?</h4>
+                <i class="faq__icon fa-solid fa-angle-down"></i>
+                <i class="faq__icon fa-solid fa-angle-up"></i>
             </div>
-            <p>
-                Pellentesque vitae convallis quam, in ultricies leo:<br><br>
-                <b>Lorem ipsum dolor sit ame:</b><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida sollicitudin diam, vestibulum placerat nisl finibus ut. Duis ac pulvinar justo. Aliquam mi nisl, gravida eget suscipit non, sodales in tortor. Nam purus sem, blandit non justo ac, ornare tempor quam. Morbi pharetra vehicula ornare. Proin gravida turpis orci, sit amet sollicitudin mi rutrum nec. <br><br>
-                <b>Curabitur gravida ullamcorper dui:</b><br>
-                Pellentesque - tincidunt efficitur suscipit. Aliquam commodo id est eu cursus. Mauris ut elit quis nunc eleifend egestas in ac lorem. 
-                Pellentesque - vitae convallis quam, in ultricies leo. Curabitur gravida ullamcorper dui. Aliquam velit arcu, ultrices nec mauris a, vehicula fermentum nisi. 
-                Donec commodo - nisl at magna congue volutpat. Suspendisse sed nulla ultricies, elementum risus venenatis, eleifend sem. Vestibulum rutrum ut lectus id dignissim.
-                Curabitur eros diam - bibendum in ipsum ut, posuere suscipit magna. Maecenas at congue purus, vel facilisis odio. Praesent scelerisque, ipsum vel ultricies congue, odio turpis pharetra tellus, ac auctor orci tortor volutpat lectus. 
+            <h3 class="faq__answer">
+                Pellentesque vitae convallis quam, in ultricies leo: <br><br>
+
+                <span class="faq__answer--label">Lorem ipsum dolor sit ame:</span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida sollicitudin diam, vestibulum
+                placerat nisl finibus ut. Duis ac pulvinar justo. Aliquam mi nisl, gravida eget suscipit non, sodales in
+                tortor. Nam purus sem, blandit non justo ac, ornare tempor quam. Morbi pharetra vehicula ornare. Proin
+                gravida turpis orci, sit amet sollicitudin mi rutrum nec. <br><br>
+
+                <span class="faq__answer--label">Curabitur gravida ullamcorper dui:</span>
+                Pellentesque - tincidunt efficitur suscipit. Aliquam commodo id est eu cursus. Mauris ut elit quis nunc
+                eleifend egestas in ac lorem.
+                Pellentesque - vitae convallis quam, in ultricies leo. Curabitur gravida ullamcorper dui. Aliquam velit
+                arcu, ultrices nec mauris a, vehicula fermentum nisi.
+                Donec commodo - nisl at magna congue volutpat. Suspendisse sed nulla ultricies, elementum risus
+                venenatis, eleifend sem. Vestibulum rutrum ut lectus id dignissim.
+                Curabitur eros diam - bibendum in ipsum ut, posuere suscipit magna. Maecenas at congue purus, vel
+                facilisis odio. Praesent scelerisque, ipsum vel ultricies congue, odio turpis pharetra tellus, ac auctor
+                orci tortor volutpat lectus.
                 Vestibulum tempor - ipsum et nibh mattis, sed volutpat dui bibendum.
-            </p>
+            </h3>
         </div>
-        <div>
-            <div>
-                <p>Other question?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
+
+        <div class="faq__item">
+            <div class="faq__question">
+                <h4 class="faq__question-text">Other question?</h4>
+                <i class="faq__icon fa-solid fa-angle-down"></i>
+                <i class="faq__icon fa-solid fa-angle-up"></i>
             </div>
-            <p>
+            <h3 class="faq__answer">
                 Pellentesque vitae convallis quam, in ultricies leo:<br><br>
-                <b>Lorem ipsum dolor sit ame:</b><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida sollicitudin diam, vestibulum placerat nisl finibus ut. Duis ac pulvinar justo. Aliquam mi nisl, gravida eget suscipit non, sodales in tortor. Nam purus sem, blandit non justo ac, ornare tempor quam. Morbi pharetra vehicula ornare. Proin gravida turpis orci, sit amet sollicitudin mi rutrum nec. <br><br>
-                <b>Curabitur gravida ullamcorper dui:</b><br>
-                Pellentesque - tincidunt efficitur suscipit. Aliquam commodo id est eu cursus. Mauris ut elit quis nunc eleifend egestas in ac lorem. 
-                Pellentesque - vitae convallis quam, in ultricies leo. Curabitur gravida ullamcorper dui. Aliquam velit arcu, ultrices nec mauris a, vehicula fermentum nisi. 
-                Donec commodo - nisl at magna congue volutpat. Suspendisse sed nulla ultricies, elementum risus venenatis, eleifend sem. Vestibulum rutrum ut lectus id dignissim.
-                Curabitur eros diam - bibendum in ipsum ut, posuere suscipit magna. Maecenas at congue purus, vel facilisis odio. Praesent scelerisque, ipsum vel ultricies congue, odio turpis pharetra tellus, ac auctor orci tortor volutpat lectus. 
-                Vestibulum tempor - ipsum et nibh mattis, sed volutpat dui bibendum.
-            </p>
+                <span class="faq__answer--label">Lorem ipsum dolor sit ame:</span><br>
+                Lorem ipsum dolor sit amet...
+            </h3>
         </div>
-        <div>
-            <div>
-                <p>Other question?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
+
+        <div class="faq__item">
+            <div class="faq__question">
+                <h4 class="faq__question-text">Other question?</h4>
+                <i class="faq__icon fa-solid fa-angle-down"></i>
+                <i class="faq__icon fa-solid fa-angle-up"></i>
             </div>
-            <p>
+            <h3 class="faq__answer">
                 Pellentesque vitae convallis quam, in ultricies leo:<br><br>
-                <b>Lorem ipsum dolor sit ame:</b><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida sollicitudin diam, vestibulum placerat nisl finibus ut. Duis ac pulvinar justo. Aliquam mi nisl, gravida eget suscipit non, sodales in tortor. Nam purus sem, blandit non justo ac, ornare tempor quam. Morbi pharetra vehicula ornare. Proin gravida turpis orci, sit amet sollicitudin mi rutrum nec. <br><br>
-                <b>Curabitur gravida ullamcorper dui:</b><br>
-                Pellentesque - tincidunt efficitur suscipit. Aliquam commodo id est eu cursus. Mauris ut elit quis nunc eleifend egestas in ac lorem. 
-                Pellentesque - vitae convallis quam, in ultricies leo. Curabitur gravida ullamcorper dui. Aliquam velit arcu, ultrices nec mauris a, vehicula fermentum nisi. 
-                Donec commodo - nisl at magna congue volutpat. Suspendisse sed nulla ultricies, elementum risus venenatis, eleifend sem. Vestibulum rutrum ut lectus id dignissim.
-                Curabitur eros diam - bibendum in ipsum ut, posuere suscipit magna. Maecenas at congue purus, vel facilisis odio. Praesent scelerisque, ipsum vel ultricies congue, odio turpis pharetra tellus, ac auctor orci tortor volutpat lectus. 
-                Vestibulum tempor - ipsum et nibh mattis, sed volutpat dui bibendum.
-            </p>
+                <span class="faq__answer--label">Lorem ipsum dolor sit ame:</span><br>
+                Lorem ipsum dolor sit amet...
+            </h3>
         </div>
-        <div>
-            <div>
-                <p>Other question?</p>
-                <i class="fa-solid fa-angle-down"></i>
-                <i class="fa-solid fa-angle-up"></i>
+
+        <div class="faq__item">
+            <div class="faq__question">
+                <h4 class="faq__question-text">Other question?</h4>
+                <i class="faq__icon fa-solid fa-angle-down"></i>
+                <i class="faq__icon fa-solid fa-angle-up"></i>
             </div>
-            <p>
+            <h3 class="faq__answer">
                 Pellentesque vitae convallis quam, in ultricies leo:<br><br>
-                <b>Lorem ipsum dolor sit ame:</b><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida sollicitudin diam, vestibulum placerat nisl finibus ut. Duis ac pulvinar justo. Aliquam mi nisl, gravida eget suscipit non, sodales in tortor. Nam purus sem, blandit non justo ac, ornare tempor quam. Morbi pharetra vehicula ornare. Proin gravida turpis orci, sit amet sollicitudin mi rutrum nec. <br><br>
-                <b>Curabitur gravida ullamcorper dui:</b><br>
-                Pellentesque - tincidunt efficitur suscipit. Aliquam commodo id est eu cursus. Mauris ut elit quis nunc eleifend egestas in ac lorem. 
-                Pellentesque - vitae convallis quam, in ultricies leo. Curabitur gravida ullamcorper dui. Aliquam velit arcu, ultrices nec mauris a, vehicula fermentum nisi. 
-                Donec commodo - nisl at magna congue volutpat. Suspendisse sed nulla ultricies, elementum risus venenatis, eleifend sem. Vestibulum rutrum ut lectus id dignissim.
-                Curabitur eros diam - bibendum in ipsum ut, posuere suscipit magna. Maecenas at congue purus, vel facilisis odio. Praesent scelerisque, ipsum vel ultricies congue, odio turpis pharetra tellus, ac auctor orci tortor volutpat lectus. 
-                Vestibulum tempor - ipsum et nibh mattis, sed volutpat dui bibendum.
-            </p>
+                <span class="faq__answer--label">Lorem ipsum dolor sit ame:</span>><br>
+                Lorem ipsum dolor sit amet...
+            </h3>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-content">
+            <h4 class="modal-content-title">added to cart</h4>
+            <div class="modal-buttons">
+                <button class="close-modal">continue shopping</button>
+                <button class="close-modal">go to cart</button>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
